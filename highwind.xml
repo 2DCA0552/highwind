@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>highwind</name>
+    </assembly>
+    <members>
+        <member name="M:Highwind.Controllers.ClientController.GetClients(Microsoft.AspNetCore.Mvc.ApiVersion)">
+            <summary>
+            Get All Clients (an entity which describes a subscriber application to Highwind)
+            </summary>
+        </member>
+        <member name="M:Highwind.Controllers.ClientController.GetClient(System.Int32,Microsoft.AspNetCore.Mvc.ApiVersion)">
+            <summary>
+            Get a specific Client
+            </summary>
+        </member>
+        <member name="M:Highwind.Controllers.ClientController.PostClient(Highwind.Models.ClientRequest,Microsoft.AspNetCore.Mvc.ApiVersion)">
+            <summary>
+            Post a new Client
+            </summary>
+        </member>
+        <member name="M:Highwind.Controllers.ClientController.PutClient(System.Int32,Highwind.Models.Client,Microsoft.AspNetCore.Mvc.ApiVersion)">
+            <summary>
+            Put (update) an existing Client - overwrite completely.
+            </summary>
+        </member>
+        <member name="M:Highwind.Controllers.ClientController.PatchClient(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Highwind.Models.Client},Microsoft.AspNetCore.Mvc.ApiVersion)">
+            <summary>
+            Patch (update) an existing Client - specific fields.
+            </summary>
+        </member>
+        <member name="M:Highwind.Controllers.ClientController.DeleteClient(System.Int32,Microsoft.AspNetCore.Mvc.ApiVersion)">
+            <summary>
+            Delete an existing Client
+            </summary>
+        </member>
+        <member name="M:Highwind.Controllers.TokenController.AuthByApiKey(System.String,System.String)">
+            <summary>
+            Sets an http only cookie with the JWT token as the value based on an apiKey
+            </summary>
+        </member>
+        <member name="M:Highwind.Controllers.TokenController.AuthByApplication(System.String,System.String)">
+            <summary>
+            Sets an http only cookie with the JWT token as the value based on an application name
+            </summary>
+        </member>
+        <member name="M:Highwind.Controllers.TokenController.BearerByApiKey(System.String)">
+            <summary>
+            Returns a JWT token inside a JSON packet based on an api key
+            </summary>
+        </member>
+        <member name="M:Highwind.Controllers.TokenController.BearerByAppication(System.String)">
+            <summary>
+            Returns a JWT token inside a JSON packet based on an application name
+            </summary>
+        </member>
+        <member name="M:Highwind.Controllers.TokenController.Validate(Highwind.Models.ValidateRequest)">
+            <summary>
+            Validate an existing JWT.
+            </summary>
+        </member>
+        <member name="M:Highwind.Controllers.TokenController.Read(Highwind.Models.ReadRequest)">
+            <summary>
+            Read an existing JWT.
+            </summary>
+        </member>
+    </members>
+</doc>
